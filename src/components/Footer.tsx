@@ -79,7 +79,7 @@ const Footer = () => {
 
         {/* Bottom */}
         <div className="border-t border-border/50 mt-8 pt-8 flex flex-col sm:flex-row justify-between items-center text-sm text-muted-foreground">
-          <p>&copy; 2024 Patsimeredu Edutainment Trust. All rights reserved.</p>
+          <p>&copy; 2025 Patsimeredu Edutainment Trust. All rights reserved.</p>
           <div className="flex space-x-4 mt-4 sm:mt-0">
             <a href="#" className="hover:text-primary transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-primary transition-colors">Terms of Service</a>

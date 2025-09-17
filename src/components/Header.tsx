@@ -1,5 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Menu, Phone, Mail } from "lucide-react";
+import logo from "@/assets/Logo/Patsime logo_125030.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -8,7 +10,8 @@ const Header = () => {
         {/* Logo */}
         <div className="flex items-center space-x-2">
           <div className="h-10 w-10 rounded-lg bg-primary/20 flex items-center justify-center">
-            <span className="text-lg font-bold text-primary">P</span>
+            <img src={logo} alt="" />
+            {/* <span className="text-lg font-bold text-primary">P</span> */}
           </div>
           <div>
             <h1 className="text-xl font-bold">Patsime Trust</h1>
@@ -18,9 +21,9 @@ const Header = () => {
 
         {/* Navigation */}
         <nav className="hidden md:flex items-center space-x-8">
-          <a href="#home" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link to="/" className="text-sm font-medium hover:text-primary transition-colors">
             Home
-          </a>
+          </Link>
           <a href="#shows" className="text-sm font-medium hover:text-primary transition-colors">
             Shows
           </a>
@@ -30,9 +33,9 @@ const Header = () => {
           <a href="#projects" className="text-sm font-medium hover:text-primary transition-colors">
             Projects
           </a>
-          <a href="#gallery" className="text-sm font-medium hover:text-primary transition-colors">
+          <Link to="/gallery" className="text-sm font-medium hover:text-primary transition-colors">
             Gallery
-          </a>
+          </Link>
           <a href="#contact" className="text-sm font-medium hover:text-primary transition-colors">
             Contact
           </a>
